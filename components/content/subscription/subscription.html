@@ -1,0 +1,127 @@
+
+<section class="home-leadgen top-border" >
+<div class="row">
+<div class="large-12 columns">
+
+<article class="leadgen-block"  id="edu_leadgen_grab" style="
+    margin-left: 0px;
+    margin-right: 0px;
+">
+
+
+<h4><span class="blue-text">${properties.highlightedtext}</span> ${properties.text}</h4>
+<p>${properties.para}</p>
+
+
+
+<!--begin slide open widget-->
+<div id="slide_open_widget" class="edu_leadgen_content">
+
+
+<form method="post" name="education_leadgen" class="signup_form EMAsubmit blue-border" action="">
+
+
+
+<p class="required_msg"><span class="required" >*</span>Required Field</p>
+
+<input value="Lead Gen" name="LeadSource" type="hidden">
+<input value="Education Subscription" name="EventType" type="hidden">
+<input value="hcscGeneralEducationWidget" name="CampaignID" type="hidden">
+<input value="Under65" name="ProductLine" type="hidden">
+<input value="English" name="WrittenLanguage" type="hidden">
+<input value="English" name="OralLanguage" type="hidden">
+<input value="Email" name="CommunicationPreference" type="hidden">
+
+<div class="row" >
+<div class="large-4 columns" >
+<label for="email">${properties.emailtext}<span class="required" >*</span></label>
+<input type="text" name="PrimaryEmail" id="email" class="h5-email" placeholder="${properties.placeholder}" required>
+<span class="errors">Please enter a valid email address</span>
+</div>
+
+
+
+
+<div class="large-2 columns" >
+<label for="zip-value">${properties.zipcode}<span class="required" >*</span></label>
+<input id="zip-value" type="number" name="ZipCode" class="h5-zipCode zipCode" maxlength="5" required/>
+<span class="errors">Please enter a valid zip code</span>
+</div>
+
+
+
+<div class="large-4 columns" >
+<fieldset class="lang-pref-fieldset">
+<legend>${properties.lang}<span class="required" >*</span></legend>
+<div class="half_width" >
+<input name="LanguagePreference"  type="radio"   class="short" id="eng" value="English"  data-h5-errorid="radioError" checked required   /><label for="eng">English</label></div> <div class="half_width">
+<input type="radio" name="LanguagePreference"   class="short" id="spn" data-h5-errorid="radioError" value="Spanish" required  /><label for="spn">Espa&ntilde;ol</label>
+</div>
+</fieldset>
+<span class="errors"  id="radioError"  >Please choose your language preference</span>
+</div>
+
+<style>
+
+.lang-pref-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset legend {
+       font-weight: bold;
+background: none;
+    color: #474747;
+    display: block;
+    width: 100%;
+    margin: 10px 0 3px 0;
+padding-top: 10px;
+    font-size: 0.8em;
+}
+
+</style>
+
+<div class="large-2 columns" >
+<input id="leadGen_submit" type="submit"  name="submit"  value="Submit" class="button-blue" />
+</div>
+
+
+
+
+
+</div>
+<!--below section is hidden for this release--
+<label>Would you like to be contacted by a representative?<span class="required" >*</span></label>
+<div class="half_width" ><input type="radio" name="group2" data-h5-errorid="radioError2"   required="required"     /><label>Yes</label></div>
+<div class="half_width" ><input type="radio"  name="group2"  data-h5-errorid="radioError2"   required="required"   /><label>No</label></div>
+<span class="errors"  id="radioError2"  >Please select Yes or No</span>
+-->
+
+
+
+
+</form>
+    
+<div id="education_leadgenty"  class="hidden-msg"><p class="confirmation-message" >Thank you!</p> <p>Your information has been received.</p></div>
+<div id="education_leadgenem"  class="hidden-msg"><p class="confirmation-message" >Sorry!</p> <p>Your information could not be received.</p></div>
+
+
+
+
+
+</div><!--end .slide_open_widget-->
+
+
+</article>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</section>

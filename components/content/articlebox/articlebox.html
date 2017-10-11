@@ -1,0 +1,22 @@
+
+<div data-sly-use.textimage="com.bcbsil.core.TextImageMultifield" data-sly-unwrap> </div>
+<div data-sly-test="${!textimage.MultiFieldItems}" data-sly-unwrap>Add values in Dialog</div>
+<section class="bt-margin">
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="gray-box-item-container">
+
+		<div data-sly-list.head="${textimage.MultiFieldItems}" data-sly-unwrap>
+          <li>
+            <article class="gray-box-block">
+			<a href="${head.link}">
+              <h4>${head.title}</h4>
+				${head.src}
+			</a>        
+			</article>
+          </li>
+			</div>
+        </ul>
+      </div>
+    </div>
+  </section>

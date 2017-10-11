@@ -1,0 +1,12 @@
+<div data-sly-use.multiItems="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>    
+<article class="landing-img-block"> 
+<figure class="f1"> <img src="${properties.img}" width="197" height="69" border="0" alt="Medicaid Plans"> </figure>
+<div class="landing-text-block">
+<h3 class="no-arrow">${properties.text}<span class="blue-text">${properties.htxt}</span></h3>
+<ul class="link-items">
+<div data-sly-list.head="${multiItems.multiFieldItems}" data-sly-unwrap>
+<li><a href="${head.link}" target="_blank">${head.title}<sup>SM</sup></a></li>
+</div>
+</ul>
+</div>
+</article>

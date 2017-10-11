@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='bcbsil.clientlibs'}"/>
+
+<article class="landing-img-block"> <a href="${properties.link}">
+          <figure class="f2"> <img src="${properties.image}" width="197" height="69" border="0" alt="${properties.alttext}">  </figure>
+          <div class="landing-text-block">
+            <h3>${properties.text1} <span class="blue-text">${properties.text2}</span></h3>
+            <p>${properties.para}</p></div>
+          </a>
+ </article>

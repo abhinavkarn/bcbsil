@@ -1,0 +1,42 @@
+<div data-sly-test="${properties.color=='null'||!properties.color}">
+Select a color & author the content
+</div>
+
+
+
+
+<div data-sly-test="${properties.color=='blue'}">
+<div data-sly-use.navItems="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>
+<div id="box-2" class="sp-bx2">
+<img src="${properties.imgs}" style="position: absolute;right: 10px;"/>
+<div class="box-text-content">
+<h2 class="remove-rt-arrow">${properties.text6} <br><strong>${properties.text7}</strong>${properties.text8}</h2>
+<ul class="block-link-list">
+<div data-sly-list.nav="${navItems.multiFieldItems}" data-sly-unwrap>
+<li><a href="${nav.link}">${nav.title}</a></li>
+</div>
+</ul>
+</div>
+<div class="box-text-screen"></div>
+</div>
+</div>
+
+
+
+
+
+<div data-sly-test="${properties.color=='green'}">
+<div data-sly-use.navItems="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>
+<div id="box-3" class="sp-bx3" style="margin-bottom: 8px;">
+<img src="${properties.imgs}" style="position: absolute;right: 10px;"/>
+<div class="box-text-content">
+<h2 class="remove-rt-arrow">${properties.text6} <br><strong>${properties.text7}</strong>${properties.text8}</h2>
+<ul class="block-link-list">
+<div data-sly-list.nav="${navItems.multiFieldItems}" data-sly-unwrap>
+<li><a href="${nav.link}">${nav.title}</a></li>
+</div>
+</ul>
+</div>
+<div class="box-text-screen"></div>
+</div>
+</div>

@@ -1,0 +1,24 @@
+<div data-sly-use.links="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>
+<div class="ls-cmp-wrap ls-1st">
+<div class="iw_component">
+<div class="iw-menubar" id="iw-menubar">
+    <ul class="side_nav" id="dyn_side_nav">
+        <li class="opt_green">
+        <a href="${properties.menuhref}">${properties.menutitle}</a>
+        </li>
+        <div data-sly-list.head="${links.MultiFieldItems}" data-sly-unwrap>
+            <li>
+            <a href="${head.link}" target="">${head.title}</a>
+            <ul></ul>
+            </li>
+        </div>
+    </ul>
+</div>
+</div>
+</div>
+<div class="ls-cmp-wrap">
+<div class="iw_component">
+<div>
+</div>
+</div>
+</div>

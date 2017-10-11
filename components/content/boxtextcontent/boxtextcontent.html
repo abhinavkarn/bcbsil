@@ -1,0 +1,23 @@
+<div data-sly-test="${properties.color=='null'||!properties.color}">
+<h1>Select a color & author the content</h1>
+</div>
+
+<div data-sly-test="${properties.color=='blue'}">
+<div id="box-2" class="ib-bx2">
+<img src="${properties.imgs}" style="position: absolute;right: 10px;"/>
+          <div class="box-text-content"> <a href="${properties.link}" class="link-block">
+            <h2><span class="block-text">${properties.text4}</span> <strong>${properties.text5}</strong></h2>
+            </a> </div>
+          <div class="box-text-screen"></div>
+        </div>
+</div>
+
+<div data-sly-test="${properties.color=='green'}">
+        <div id="box-3" class="ms-bx3" style="margin-bottom: 8px;">
+<img src="${properties.imgs}" style="position: absolute;right: 10px;"/>
+          <div class="box-text-content"> <a href="${properties.link}" class="link-block">
+            <h2><span class="block-text">${properties.text4}</span> <strong>${properties.text5}</strong></h2>
+            </a> </div>
+          <div class="box-text-screen"></div>
+        </div>
+</div>

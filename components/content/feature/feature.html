@@ -1,0 +1,14 @@
+<div data-sly-use.multiItems="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>  
+<div class="blue-feature" >
+    <h4>${properties.head}</h4>
+          <ul class="news-list" >
+              <div data-sly-list.head="${multiItems.multiFieldItems}" data-sly-unwrap>
+
+
+                  <li><h5>${head.title}</h5>
+    						${head.link}
+    					</li>
+              </div>
+
+          </ul>
+        </div>

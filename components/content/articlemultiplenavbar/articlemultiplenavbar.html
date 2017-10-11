@@ -1,0 +1,29 @@
+
+<div data-sly-use.mbeanObj="com.bcbsil.core.TouchMultiComponent" data-sly-unwrap> </div>
+
+<div class="ls-cmp-wrap ls-1st" id="w1409072962700">
+<div class="iw_component" id="1409072962700">
+<div class="iw-menubar" id="iw-menubar">
+
+<ul class="side_nav" id="dyn_side_nav">
+<li class="opt_green">
+<a href="${properties.lnk}">${properties.head}</a>
+</li>
+<div data-sly-test="${!mbeanObj.mBean}" data-sly-unwrap>Add values in Dialog</div>
+<div data-sly-test="${mbeanObj.mBean}" data-sly-list.items="${mbeanObj.mBean}" data-sly-unwrap>
+<li>
+<div>${items.dashboard}</div>
+<ul>
+<div data-sly-list.itemsList="${items.items}" data-sly-unwrap>
+<li>
+<a href="${itemsList.path}" target="">${itemsList.page}</a>
+<ul></ul>
+</li>
+</div>
+</ul>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>

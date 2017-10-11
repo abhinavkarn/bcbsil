@@ -1,0 +1,261 @@
+<div data-sly-use.multiItems="com.bcbsil.core.TwoMultiComponent" data-sly-use.navItems="com.bcbsil.core.NavMultiComponent" data-sly-unwrap> </div>    
+
+
+<div class="ls-row fullWidth_row" id="pageHeader">
+<div class="ls-fxr">
+<div class="ls-col">
+<div class="ls-col-body">
+<div class="ls-row">
+<div class="ls-fxr">
+<div class="ls-area">
+<div class="ls-area-body">
+<div class="ls-cmp-wrap ls-1st">
+<div class="iw_component">
+<div>
+
+
+
+
+                    <div class="header-nav  [ small-12  columns ]">
+                        <!-- top links (desktop only) -->
+                        <div class="fullWidth_row topTabs">
+                           <div class="row">
+                            <!-- Links: group 1 -->
+                            <div class="top-links  [ large-5  columns ] hide-for-small">
+                                <ul class="inline-list  inline-list-header">
+
+							<div data-sly-list.head="${multiItems.multiFieldItems}" data-sly-unwrap>
+
+                    <li class="portal-link"><a href="${head.link}">${head.title}</a></li>
+									</div>
+
+
+
+
+
+                                </ul>
+                            </div>                            
+
+                            <!-- Links: group 2 -->
+                            <div class="top-links  [ large-7  columns ]">
+                                <ul class="inline-list  inline-list-header  right">
+                                    <li class="right-link hide-for-small">
+                                        <img  src="${properties.fbklogo}"
+                                             title="Feedback"  alt=""        width="9" height="9"         >
+                                             <a id="feedback-link" class="space" href="javascript:void(0);" onclick="oo_feedback.show()">${properties.fbktxt}</a>
+                                    </li>
+                                    <li class="right-link hide-for-small"><a href="${properties.infolnk}">${properties.info}</a></li>
+<li class="right-link"><a href="${properties.langlnk}" target="_blank">${properties.lang}</a></li>
+                                    <li class="right-link espanol-link">
+                                         <img id="icon_espanol" src="bcbsil_images/icon_espanol.png" alt="" title=""    width="19" height="16"   /> 
+                                         <a class="space  translate-link  highlighted"
+                                           mporgnav=""
+
+                                           href="#"
+                                           id="espSwitch">En espa&#241;ol</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+
+
+<div class="ivy-container-15" >
+<div id="ask-ivy-widget" class="hide-for-small" >
+<a  id="ivy_hcsc_id" onclick="Nina.AgentLoader.loadAgent('hcsc')"><span class="ask-ivy-img" ></span>
+<!-- mp_trans_remove_start -->
+<span class="ask-ivy-title" ><span class="unbold" >Ask</span>${properties.vname}<sup>SM</sup></span>
+<span class="ask-ivy-text" >${properties.vtxt}</span>
+<!-- mp_trans_remove_end -->
+<!-- mp_trans_disable_start --><!-- mp_trans_add 
+<span class="ask-ivy-title" ><span class="unbold" >Preg&uacute;ntele a</span> Sara<sup>SM</sup></span>
+<span class="ask-ivy-text" >Su Asistente Virtual</span>
+--><!-- mp_trans_disable_end -->
+</a>
+</div>
+</div>
+
+
+                        <!-- Logo and Search (desktop) -->
+                        <div class="logo-bar  fullWidth_row  hide-for-small">
+                            <div class="row">
+                                <div class="large-logo-container  [ large-6  columns ]">
+                                    <a href="${properties.logohref}">
+                                        <img class="show-for-medium-up" 
+                                             src="${properties.logo}"
+                                             alt="${properties.logoalt}"
+                                             title="${properties.logotitle}"/>
+                                    </a>
+                                </div>
+                                <div class="large-6  columns">
+                                    <div class="row">
+                                        <div class="search-top  [ small-6  small-offset-6 columns]">
+                                            <div class="search-container">
+<!--
+<form class="noEMA" action="/bcbs2/Home.page?submit=true&componentID=1408502248029" method="post">
+
+	<label for="s" title="Submit Search Field" style="font-size:0; line-height:0;">Search</label>
+<input class="search-button" title="Search" src="${properties.searchlogo}" alt="Search" type="image">
+
+
+	<input class="fsrVisible search-input" id="s" value="Search" onfocus="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" name="keyword" type="text">
+
+</form>
+-->
+                                                <form class="noEMA" action="/bcbs/search" method="post">
+
+                                                    <input class="search-button" title="Search"
+                                                           src="${properties.searchlogo}"
+                                                           alt="Search" type="image">
+
+                                                    <input class="fsrVisible  search-input"
+ aria-label="Search"
+                                                           value="${properties.searchtxt}"
+                                                           onfocus="if(this.value=='Search')this.value='';"
+                                                           onblur="if(this.value=='')this.value='Search';"
+                                                           name="keyword"
+                                                           type="text">
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- mobile header -->
+                        <div class="mobile-header  show-for-small">
+                            <div class="sidebar-button-container" style="display: inline-block">
+                                <a class='sidebar-button  show-for-small' id="sidebarButton" href="#sidebar">
+                                    <img class="icon-side-menu" src="${properties.mobilemenu}"  width="48" height="42" 
+                                         alt="Side menu button"/>
+                                </a>
+                            </div>
+                            <div class="small-logo-container" style="display: inline-block;">
+                                <a href="/"><img src="${properties.mobilelogo}" alt ="${properties.logoalt}" /></a>
+                            </div>
+                        </div>
+
+</div>
+</div>
+</div>
+
+<div class="ls-cmp-wrap">
+<div class="iw_component">
+
+
+<div>
+<div class="header-bar  [ row ]">
+<!-- Main Nav Bar -->
+                            <div class="large-left-nav  [ small-10  columns ]  show-for-medium-up">
+<a href="${properties.hhref}">
+                                    <div style="float:left">
+<img src="${properties.homeicon}" alt="${properties.halt}" title="${properties.htitle}"      width="20" height="17"        />
+                                    </div>
+                                </a>
+                                <ul class="js-main-nav">
+                                <div data-sly-list.nav="${navItems.multiFieldItems}" data-sly-unwrap>
+                                    <li class="large-nav-link"><a href="${nav.link}">${nav.title}</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <!-- Secondary Nav Bar: Small Screens -->
+                            <div class="right-nav  [ large-2  small-12  columns ]">
+                                <div class="show-for-small">
+                                    <ul class="spaced-inline-list">
+
+                                        
+                                        <li class="spaced-inline-list--item  mobile_assistance">
+                                            <a href="#">
+                                                <div>
+                                                    <p>Contact Us</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="spaced-inline-list--item mobile_doctor">
+                                            <a href="#">
+                                                <div>
+                                                    <p>Find a Doctor</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="spaced-inline-list--item mobile_more">
+                                            <a href="#">
+                                                <div>
+                                                    <p>More</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="spaced-inline-list--item mobile_login">
+                                            <a href="#">
+                                                <div>
+                                                     <p>Log In</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+								<script src='https://nexus.ensighten.com/hcsc/Bootstrap.js' type='text/javascript'></script>
+                                <!-- Secondary Nav Bar: Large Screens -->
+                                <div class="show-for-medium-up">
+                                    <ul class="spaced-inline-list">
+
+                                        
+                                        <li class="spaced-inline-list--item-2">
+                                            <a href="#" data-dropdown="navDrop-login">
+                                                <p class="login_tab">Log In</p>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+ <div id="navDrop-login" class="navDrop  medium  f-dropdown  content" data-dropdown-content="">
+ <dl id="login-subnav" class="sub-nav">
+                                <dd id="login-member" class="subnav-option active"><a href="https://www.bcbsil.com/shop-plans-and-products#">Member</a></dd>
+                                <dd id="login-returning" class="subnav-option"><a href="https://www.bcbsil.com/shop-plans-and-products#">Returning Shopper</a></dd>
+                                <dd id="login-employer" class="subnav-option"><a href="https://www.bcbsil.com/shop-plans-and-products#">Employer</a></dd>
+                                <dd id="login-producer" class="subnav-option"><a href="https://www.bcbsil.com/shop-plans-and-products#">Producer</a></dd>
+                            </dl>
+                            
+ </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ 

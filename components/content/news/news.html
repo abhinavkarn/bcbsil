@@ -1,0 +1,26 @@
+
+
+     <div data-sly-use.multiItems="com.bcbsil.core.MultiComponent" data-sly-unwrap>  </div>
+
+
+
+
+<h5>Recent News</h5>
+<span class="homepage-hr"></span>
+<ul>
+ <div data-sly-list.head="${multiItems.MultiFieldItems}" data-sly-unwrap>
+<li>
+
+<p>
+<span class="news-date">${head.date}</span>${head.paragraph}<a class="read-more" href="${head.link}">${head.title}</a>
+</p>
+</li>
+</div>
+
+</ul>
+<a class="view-all" href="#">View all news</a><a class="view-all" href="#">View all alerts and announcements</a>
+
+
+
+
+

@@ -1,0 +1,39 @@
+
+
+<div data-sly-use.mbeanObj="com.bcbsil.core.TouchMultiComponent" data-sly-unwrap>  </div>
+<div data-sly-test="${!mbeanObj.mBean}" data-sly-unwrap> </div>
+
+	<div id="s-onenew">
+            <div class="title-block">
+	<h3 class="larger"><span class="block">${properties.text1}</span>${properties.text2}</h3>
+            </div>
+
+
+                <ul class="double-arrow-link">
+                	<div data-sly-test="${mbeanObj.mBean}" data-sly-list.items="${mbeanObj.mBean}" data-sly-unwrap>
+            			<div data-sly-list.itemsList="${items.items}" data-sly-unwrap>
+                			<li><a href="${itemsList.path}">${itemsList.page}</a></li>
+                        </div>
+        			</div>
+
+                </ul>
+		</div>
+
+		<div id="p1" class="box-container">
+				<a id="s-twonew" class="il" href="#" aria-hidden="false">
+					 <img src="${properties.img}" alt="">
+                    	<h3>${properties.text}</h3>
+                </a>
+
+			<div data-sly-use.multiItems="com.bcbsil.core.TwoMultiComponent" data-sly-unwrap> </div>
+        		<div id="s-threenew" class="il">
+                    <h3>${properties.imgtext}</h3>
+						<div id="medicaidlinks">
+	<div data-sly-list.head="${multiItems.MultiFieldItems}" data-sly-unwrap>
+			<a href="${head.link}">${head.title}<sup>SM</sup></a>
+                </div>
+            </div>
+		</div>
+
+
+</div>
